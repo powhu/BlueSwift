@@ -12,6 +12,8 @@
 		2FE990A01BFAF17F006561AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE9909E1BFAF17F006561AB /* Main.storyboard */; };
 		2FE990A21BFAF17F006561AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE990A11BFAF17F006561AB /* Assets.xcassets */; };
 		2FE990A51BFAF17F006561AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE990A31BFAF17F006561AB /* LaunchScreen.storyboard */; };
+		2FE990AD1BFAF248006561AB /* CentralVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE990AC1BFAF248006561AB /* CentralVC.swift */; };
+		2FE990AF1BFB1425006561AB /* PeripheralVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE990AE1BFB1425006561AB /* PeripheralVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2FE990A11BFAF17F006561AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FE990A41BFAF17F006561AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FE990A61BFAF17F006561AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FE990AC1BFAF248006561AB /* CentralVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralVC.swift; sourceTree = "<group>"; };
+		2FE990AE1BFB1425006561AB /* PeripheralVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				2FE9909A1BFAF17F006561AB /* AppDelegate.swift */,
 				2FE9909C1BFAF17F006561AB /* ViewController.swift */,
+				2FE990AC1BFAF248006561AB /* CentralVC.swift */,
+				2FE990AE1BFB1425006561AB /* PeripheralVC.swift */,
 				2FE9909E1BFAF17F006561AB /* Main.storyboard */,
 				2FE990A11BFAF17F006561AB /* Assets.xcassets */,
 				2FE990A31BFAF17F006561AB /* LaunchScreen.storyboard */,
@@ -96,6 +102,12 @@
 				TargetAttributes = {
 					2FE990961BFAF17F006561AB = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 9US4BGBQ2D;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -136,6 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FE9909D1BFAF17F006561AB /* ViewController.swift in Sources */,
+				2FE990AD1BFAF248006561AB /* CentralVC.swift in Sources */,
+				2FE990AF1BFB1425006561AB /* PeripheralVC.swift in Sources */,
 				2FE9909B1BFAF17F006561AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,7 +261,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BlueSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.example.BlueSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -258,7 +274,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BlueSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.example.BlueSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
